@@ -1,0 +1,4 @@
+.calc {
+    display: flex;
+    flex-direction: column;
+}

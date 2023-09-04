@@ -14,7 +14,7 @@ const Input = ({ id, htmlFor, idRange, htmlForRange, step, min, max, content, ti
                     value={amount}
                     min={min}
                     max={max}
-                    onChange={event => handleChange(Number(event.target.value))} />
+                    onChange={event => handleChange(parseInt(event.target.value))} />
             </label>
             <label htmlFor={htmlForRange}>
                 {
@@ -27,7 +27,7 @@ const Input = ({ id, htmlFor, idRange, htmlForRange, step, min, max, content, ti
                     step={step}
                     min={min}
                     max={max}
-                    onChange={event => handleChange(Number(event.target.value))} />
+                    onChange={event => handleChange(parseInt(event.target.value))} />
             </label>
         </div>
     )
